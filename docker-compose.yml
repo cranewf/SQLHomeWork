@@ -3,7 +3,7 @@ services:
     image: mysql:8.0.34
     restart: always
     ports:
-      - '3000:3306'
+      - '3306:3306'
     volumes:
       - ./data:/docker-entrypoint-initdb.d
     environment:
